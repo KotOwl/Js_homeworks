@@ -1,3 +1,4 @@
+'use strict'
 // #67kfznmiMl
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
 let arr = [1, 'knew' , 'book', 'true' , 2 , 6 , 'arrow','okten_top',"js",'10'];
@@ -47,8 +48,8 @@ let book4 = {
     pageCount : 180,
     genre : 'Fiction',
     author : [
-        name = 'F. Scott Fitzgerald',
-        age = 'not alive'
+        {name : 'F. Scott Fitzgerald'},
+        {age : 'not alive'}
     ]
 };
 let book5 = {
@@ -56,8 +57,8 @@ let book5 = {
     pageCount : 1000,
     genre : 'Fiction',
     author : [
-        name = 'James Joyce',
-        age = 'not alive'
+        {name : 'James Joyce'},
+        {age : 'not alive'}
     ]
 };
 let book6 = {
@@ -65,8 +66,8 @@ let book6 = {
     pageCount : 4300,
     genre : 'Fiction',
     author : [
-        name = 'Marcel Proust',
-        age = 'not alive'
+        {name : 'Marcel Proust'},
+        {age : 'not alive'}
     ]
 };
 // console.log(book5.author[0])
@@ -75,52 +76,52 @@ let book6 = {
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 
 let users = [
-    user1 ={
+    {
     name : 'Vasyl',
     username :'Vasya_Nagibator',
     password :'password1',
     },
-    user2 ={
+    {
         name : 'Stanislav',
         username :'Stasik_top',
         password :'password2',
     },
-    user3 ={
+    {
         name : 'Iryna',
         username :'Iryna_okten',
         password :'password3',
     },
-    user4 ={
+    {
         name : 'Bruno',
         username :'Bruno_Mars',
         password :'password4',
     },
-    user5 ={
+    {
         name : 'Rose',
         username :'Rose_flower',
         password :'password5',
     },
-    user6 ={
+    {
         name : 'Gaga',
         username :'Lady_Gaga',
         password :'password6',
     },
-    user7 ={
+    {
         name : 'Sabrina',
         username :'Sabrina_Carpenter',
         password :'password7',
     },
-    user8 ={
+    {
         name : 'Sergey',
         username :'Sergey_Nagibator',
         password :'password8',
     },
-    user9 ={
+    {
         name : 'Vasyl',
         username :'Vasya_neNagibator',
         password :'password9',
     },
-    user10 ={
+    {
         name : 'Vasyl',
         username :'neVasya_Nagibator',
         password :'password10',
@@ -143,37 +144,37 @@ console.log(users[9].password);
 // - описати масив, в якому буде зберігатись інформація про температуру вранці, вдень і ввечері за термін в 7 днів. Як зробити цей масив - вам потрібно подумати. Нормальних варіантів опису - 2. Варіант, коли в вас буде одновимірний масив з 21 значенням вичключаємо одразу
 
 let week_weather =[
-    monday = {
+     {
         morning : 'temperature',
         during_the_day : "temperature",
         evening :"temperature",
     },
-    thuesday = {
+    {
         morning : 'temperature',
         during_the_day : "temperature",
         evening :"temperature",
     },
-    wednesday = {
+    {
         morning : 'temperature',
         during_the_day : "temperature",
         evening :"temperature",
     },
-    thursday = {
+    {
         morning : 'temperature',
         during_the_day : "temperature",
         evening :"temperature",
     },
-    friday = {
+    {
         morning : 'temperature',
         during_the_day : "temperature",
         evening :"temperature",
     },
-    saturday = {
+    {
         morning : 'temperature',
         during_the_day : "temperature",
         evening :"temperature",
     },
-    sunday = {
+    {
         morning : 'temperature',
         during_the_day : "temperature",
         evening :"temperature",
