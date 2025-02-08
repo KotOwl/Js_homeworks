@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+.users-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(5, 1fr) ;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+.user-block{
+    width: 600px;
+    height: 10%;
+
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
