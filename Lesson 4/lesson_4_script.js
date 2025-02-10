@@ -61,11 +61,11 @@ li("Gwen is immune")
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список (ul li) та виводить його через document.write
 
 function li_for_mas(array) {
-    document.write(`<ul></ul>`)
+    document.write(`<ul>`)
     for (let arrayElement of array) {
         document.write(`<li>${arrayElement}</li>`)
     }
-    document.write(`<ul></ul>`)
+    document.write(`</ul>`)
 }
 
 li_for_mas(mas)
