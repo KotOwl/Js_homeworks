@@ -74,7 +74,7 @@ console.log(smth_mas.sort((order1, order2) => (order1.orders).length - (order2.o
 //     -- changeYear (newValue) - змінює рік випуску на значення newValue
 //     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 
-function car(model,producer,year,maxSpeed,engineCapacity){
+function Car(model,producer,year,maxSpeed,engineCapacity){
 
         this.model = model
         this.producer = producer
@@ -85,12 +85,12 @@ function car(model,producer,year,maxSpeed,engineCapacity){
 
 
 }
-let careta =new car('Coolcar', 'Me', 1999, 30, 5);
+let careta =new Car('Coolcar', 'Me', 1999, 30, 5);
 function drive(maxSpeed){
     console.log(`їдемо зі швидкістю ${maxSpeed} на годину`)
 }
-function info(car){
-    console.log(`Модель : ${car.model}\n Виробник : ${car.producer}\n Рік вироблення :${car.year}\n Максимальна швидкість :${car.maxSpeed}\n Об'єм двигуна:${car.engineCapacity}`)
+function info(Car){
+    console.log(`Модель : ${Car.model}\n Виробник : ${Car.producer}\n Рік вироблення :${Car.year}\n Максимальна швидкість :${Car.maxSpeed}\n Об'єм двигуна:${Car.engineCapacity}`)
 }
 function increaseMaxSpeed(newSpeed,carInfo){
     carInfo.maxSpeed = newSpeed
@@ -101,8 +101,8 @@ function changeYear(newYear,carInfo){
     carInfo.year = newYear
 
 }
-function addDriver (model,producer,year,maxSpeed,engineCapacity,driver){
-    car.apply(this,arguments)
+function AddDriver (model,producer,year,maxSpeed,engineCapacity,driver){
+    Car.apply(this,arguments)
     this.driver = driver
 }
 drive(careta.maxSpeed)
@@ -111,7 +111,7 @@ increaseMaxSpeed(50, careta)
 console.log(careta.maxSpeed)
 changeYear(1800,careta)
 console.log(careta.year)
-let driver=new addDriver('Coolcar', 'Me', 1999, 30, 5,{age :123 ,name: 'крутий чел'})
+let driver=new AddDriver('Coolcar', 'Me', 1999, 30, 5,{age :123 ,name: 'крутий чел'})
 console.log(driver)
 //#5kla3yMpgp
 // - (Те саме, тільки через клас)
@@ -132,7 +132,7 @@ class car2 {
         this.engineCapacity = engineCapacity}
 
 
-        drive(maxSpeed)
+        drive()
         {
             console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`)
         }
