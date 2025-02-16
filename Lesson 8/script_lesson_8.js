@@ -56,4 +56,4 @@ let coursesAndDurationArray = [
 
 console.log(coursesAndDurationArray.map((value, index) =>value.id= index + 1));
 console.log(coursesAndDurationArray)
-console.log(coursesAndDurationArray.map((value, index) => ({...value, id:index = +1})));
+console.log(coursesAndDurationArray.map((value, index) => ({...value, id:index  +1})));
