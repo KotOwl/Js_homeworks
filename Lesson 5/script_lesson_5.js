@@ -1,7 +1,7 @@
 //#I2XsG6f
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 let triangleArea = (a, b) => a * b / 2
-console.log(triangleArea(4, 5))
+let triangle =(triangleArea(4, 5))
 
 //#ETGAxbEn8l
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
@@ -13,7 +13,7 @@ console.log(circle , "ee");
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 
 let cylinderArea = (r, h) => 2 * 3.14 * r * (r + h)
-console.log(cylinderArea(3, 5))
+let cylinder =(cylinderArea(3, 5))
 
 //#SIdMd0hQ
 // - створити функцію яка приймає масив та виводить кожен його елемент
