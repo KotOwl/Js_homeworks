@@ -6,7 +6,8 @@ console.log(triangleArea(4, 5))
 //#ETGAxbEn8l
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 let circleArea = (r) => 3.14 * r ** 2
-console.log(circleArea(5));
+let circle =circleArea(5);
+console.log(circle , "ee");
 
 //#Mbiz5K4yFe7
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
@@ -49,7 +50,23 @@ li("Gwen is immune")
 //#0Kxco1edSN
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
-let li_for_mas = (array) => {
+let moreLi_for_mas = (array , int) => {
+    document.write(`<ul>`)
+    for (let arrayElement of array) {
+        for (let i = 0; i < int; i++) {
+            document.write(`<li>${arrayElement}</li>`)
+            document.write(`<li>${arrayElement}</li>`)
+            document.write(`<li>${arrayElement}</li>`)
+        }
+        document.write(`<li>${arrayElement}</li>`)
+    }
+    document.write(`</ul>`)
+}
+
+moreLi_for_mas(mas,6)
+//#gEFoxMMO
+// - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список\
+function li_for_mas(array) {
     document.write(`<ul>`)
     for (let arrayElement of array) {
         document.write(`<li>${arrayElement}</li>`)
@@ -58,9 +75,6 @@ let li_for_mas = (array) => {
 }
 
 li_for_mas(mas)
-//#gEFoxMMO
-// - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список\
-
 
 
 
